@@ -17,6 +17,10 @@ const UseStateObject = () => {
     <>
       <h3>{name}</h3>
       <h3>{age}</h3>
+      <h3>{message}</h3>
+      <button className="btn" onClick={changeMessage}>
+        Change Message
+      </button>
     </>
   );
 };
