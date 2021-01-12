@@ -8,6 +8,16 @@ const UseRefBasics = () => {
   const refContainer = useRef(null);
   const divContainer = useRef(null);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(refContainer.current.value);
+    console.log(divContainer.current.value);
+  };
+
+  useEffect(() => {
+    console.log(refContainer.current.value);
+    refContainer.current.focus();
+  });
   return (
     <>
       <form className="form" onSubmit={handleSubmit}>
