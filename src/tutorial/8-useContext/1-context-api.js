@@ -13,12 +13,6 @@ const ContextAPI = () => {
       return people.filter((person) => person.id !== id);
     });
   };
-  return (
-    <PersonContext.Provider value={{ removePerson, people }}>
-      <h3>prop drilling</h3>
-      <List />
-    </PersonContext.Provider>
-  );
 };
 
 const List = () => {
